@@ -1,0 +1,11 @@
+1.  Inicio
+2.  contador, i[0-n]
+3.  contador2, i[0-n]
+4.  contador <-- 1
+5.  contador2 <-- 10
+6.  Mientras contador <=6 entonces
+7. 	 << contador + "/" + contador2
+8.  contador <-- contador + 1
+9.  contador2 <-- contador2 +1
+10. FinMientras
+11. Fin
