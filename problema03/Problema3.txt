@@ -4,7 +4,7 @@
 4.  costoHora, d[0-n] 
 5.  nombres, x(100)[{A-Z}, {a-z], {BS} 
 6.  total, d[0-n]
-7.  cadena, x(100)[{1-9}, {a-z}, {A-Z}, {/}, {BS}]
+7.  cadena, x(100)[{1-9}, {a-z}, {A-Z}, {/}, {BS}] <-- ""
 8.  	Mientras numeroEmpleados <= 5 entonces
 9. 		<< "Ingrese su nombre"
 10. 		>> nombres
