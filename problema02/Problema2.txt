@@ -1,0 +1,13 @@
+1.  Inicio
+2.  contador, i[0-n]
+3.  contador <-- 5
+4.  contador2, i[0-n]
+5.  contador2 <-- 10
+6.  Mientras contador <=30 and contador2 <= 20 entonces
+7.  		 Si (contador MOD 5) == 0 and (contador2 MOD 2) == 0 entonces
+7.  			 << contador + "/" + contador2
+8.  			 contador <-- contador + 1
+9. 			 contador2 <-- contador2 + 1
+10. 		FinSi
+11. FinMientras
+12. Fin
