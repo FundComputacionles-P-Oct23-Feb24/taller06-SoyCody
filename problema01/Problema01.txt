@@ -3,7 +3,7 @@
 3.  contador2, i[0-n]
 4.  contador <-- 1
 5.  contador2 <-- 10
-6.  Mientras contador <=6 entonces
+6.  Mientras contador <=6 and contador2 <= 15 entonces
 7. 	 << contador + "/" + contador2
 8.  contador <-- contador + 1
 9.  contador2 <-- contador2 +1
