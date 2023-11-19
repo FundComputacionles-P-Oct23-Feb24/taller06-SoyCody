@@ -1,0 +1,39 @@
+1.  Inicio
+2.  acumuladorEdad, i[0-n] <-- 0
+3.  acumuladorEstatura, d[0-n] <-- 0.00
+4.  nombre, x(100) [{A-Z}, {a-z}, {BS}]
+5.  edad, i[0-n]
+6.  estatura, d[0-n]
+7.  posocionJuego, x(100) [{A-Z}, {a-z}, {BS}]
+8.  promedioEdades, i[0-n]
+9.  promedioEstatura, d[0-n]
+10. cadena, x(100) [{A-Z}, {a-z}, {BS}, {0-9}]
+11. numeroJugadores <-- [0-n] <-- 1
+12. cantidad == l
+13. cantidad <-- true
+14. opcion, x(10) [{a-z}]
+15. Mientras cantidad == true entonces
+16. 	<< "Ingrese el nombre del jugador"
+17. 	>> nombre
+18. 	<< "Escriba la posición en la que juega"
+19. 	>> posicionJuego
+20. 	<< "Digite su edad"
+21. 	>> edad
+22. 	<<" Ingrese su estatura"
+23. 	>> estatura
+24.	cadena <-- cadena + nombre + ", -" + posicionJuego + "-, " + edad + ", " + estatura 
+25. 	acumuladorEdad <-- acumuladorEdad + edad
+26. 	acumuladorEstatura <-- acumuladorEstatura + estatura
+27. 	numeroJugadores <-- numeroJugadores + 1
+28. 	<< "Desea agregar otro jugador?, digite x para terminar"
+29. 	>> opcion
+30.	Si opcion == "x" entonces
+31. 		cantidad <-- false
+32. 	FinSi
+33. FinMientras
+34. << cadena
+35. promedioEdad <-- acumuladorEdad / numeroJugadores
+36. promedioEstatura <-- acumuladorEstatura / numeroJugadores
+37. << "Promedio de estatura: " + promedioEstatura
+38. << "Promedio de edades: " + promedioEdad
+39. Fin
