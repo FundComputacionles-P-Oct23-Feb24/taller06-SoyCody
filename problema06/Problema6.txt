@@ -1,0 +1,28 @@
+1.  Inicio 
+2.  nombre, x(100) [{A-Z}, {a-z}, {BS}]
+3.  costo, d(0-n)
+4.  tipo, x(100) [{A-Z}, {a-z}, {BS}]
+5.  descuento, d(0-n)
+6.  total, d(0-n)
+7.  ventas, i(0-n) <-- 1
+8.  cadena, x(100) [{A-Z}, {a-z}, {BS}, {0-9}]
+9.  Mientras ventas <= 7 entonces
+10.  	<< "Ingrese su nombre"
+11.	>> nombre
+12.	<< "Escriba el tipo de cliente"
+13.	>> tipo
+14.	<< "Ingrese el precio de la computadora"
+15.	>> costo
+16.	Si tipo == "Tipo 1" entonces
+17.		descuento <-- costo * 0.10
+18.		total <-- costo - descuento
+19.	De lo contrario
+20.		Si tipo == "Tipo 2" entonces
+21.			descuento <-- costo * 0.20
+22.			total <-- costo - descuento
+23.		FinSi
+24. 	FinSi
+25. cadena <-- "Nombres: %s\nCliente tipo: %s\nCompra computadora con precio de: %s\nPrecio total: %s", nombre, tipo, costo, total
+26. FinMientras
+27. << cadena
+28. Fin
