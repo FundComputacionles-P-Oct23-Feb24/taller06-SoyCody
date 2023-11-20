@@ -1,0 +1,18 @@
+1.  Inicio
+2.  terminos, i(o-n)
+3.  resultado, i(0-n)
+4.  contador, i(0-n)
+5.  terminos <-- 10
+6.  contador <-- 1
+7.  Mientras contador <= terminos entonces
+8.  	Si (contador MOD 2) == 0 entonces
+9. 		resultado <-- "-1/" + contador
+10. 	De lo contrario
+11. 		resultado <-- "+1/" + contador
+12.	FinSi
+13. contador <-- contador + 1
+14. << resultado
+15. FinMientras
+16. Fin
+
+
